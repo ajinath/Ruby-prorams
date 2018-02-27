@@ -30,3 +30,5 @@ def convert_1_level_deep(arr, result=[])
   arr.flatten.each_slice(3) { |ele| result.push(ele)}
   result
 end
+
+#original file content
