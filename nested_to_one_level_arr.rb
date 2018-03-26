@@ -20,9 +20,13 @@ end
 # 2nd Solution
 def convert_1_level_deep(arr, result=[])
   arr.each_with_object(result) { |obj, res|
-    obj.first.is_a?(Array) ? convert(obj, res) : res.push(obj)
+    obj.first.is_a?(Array) ? convert_1_level_deep(obj, res) : res.push(obj)
   }
+  result
 end
+
+p convert_1_level_deep(given_arr)
+
 
 # 3rd Solution if all the nested element having the same length
 # input = [[20, 7, "kjkj"], [[1, 2, "iuiu"], [7676, 8, 9], [[87, 9, 9]]], ["uhh", "kji", "kjij"]]
@@ -32,3 +36,5 @@ def convert_1_level_deep(arr, result=[])
 end
 
 #original file content
+
+
