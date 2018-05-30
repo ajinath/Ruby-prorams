@@ -7,7 +7,6 @@ class Tree
   	@root = root
   end
 
-  # [ 1 2 4 5 3]
   def pre_order(current=@root, arr=[])
   	return if current.nil?
   	arr.push(current.data)
@@ -31,6 +30,15 @@ class Tree
   	arr.push(current.data)
   	arr
   end
+
+  def mirror(current=@root)
+    return if current.nil?
+    left = mirror(current.left)
+    right = mirror(current.right)
+    current.left = right;
+    current.right = left;
+    current
+  end
 end
 
 class Node
@@ -53,6 +61,7 @@ tree = Tree.new(root)
 pre_order = tree.pre_order
 in_order = tree.in_order
 post_order = tree.post_order
+mirror = tree.mirror
 
 #
 # @root=
