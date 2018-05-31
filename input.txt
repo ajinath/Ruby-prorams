@@ -1,0 +1,12 @@
+22, Rajan Anand, Engineering, 1600000
+23, Swati Patil, Testing, 800000
+27, Vijay Chawda, Engineering, 800000
+29, Basant Mahapatra, Engineering, 600000
+32, Ajay Patel, Testing, 350000
+34, Swaraj Birla, Testing, 350000
+21, Vijay Chawda, Engineering, 800000
+59, Basant Mahapatra, Testing, 333333
+87, Vijay Chawda, Engineering, 888888
+19, Basant Mahapatra, Engineering, 600000
+37, Vijay Chawda, Engineering, 800000
+49, Basant Mahapatra, Testing, 87000
